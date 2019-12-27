@@ -1,0 +1,49 @@
+.flex-row{
+    display: flex;
+}
+
+.flex-greedy{
+    flex-grow: 1000;
+}
+
+.content-box{
+    box-sizing: content-box;
+    display: inline-block;
+}
+
+.flex-row__item{
+    box-sizing: content-box;
+    display: inline-block;
+    padding: 0 1rem;
+    margin: 0;
+}
+
+.centered{
+    margin: 0 auto;
+}
+
+.flex-column,
+.flex-column_centered{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column_centered{
+    align-items: center;
+}
+
+.marginless{
+    margin: 0;
+}
+
+@keyframes spin { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(360deg); 
+    }
+}
+.rotate{
+    animation: spin .6s infinite linear;
+   
+}
